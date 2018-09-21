@@ -11,7 +11,7 @@ const calculator = (state = initAppState, action) => {
     case actionTypes.INPUT_NUMBER:
       return {
         ...state,
-        inputValue: state.inputValue * 10 + action.number,
+        inputValue: state.inputValue * 10 + action.num,
         isShownResult: false,
       };
     case actionTypes.PLUS:
